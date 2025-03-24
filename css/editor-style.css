@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'klarheit_groteskregular';
+	src: url('<?php echo get_template_directory_uri(); ?>/fonts/klarheitgrotesk-regular.woff2') format('woff2'),
+	url('<?php echo get_template_directory_uri(); ?>/fonts/klarheitgrotesk-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.editor-styles-wrapper h1 {
+	font-family: 'klarheit_groteskregular', sans-serif;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 1.2;
+}

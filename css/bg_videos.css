@@ -1,0 +1,144 @@
+/* @override 
+	https://aquaria.local/wp-content/themes/aquaria/css/bg_videos.css?*
+	http://aquaria.local/wp-content/themes/aquaria/css/bg_videos.css?* */
+
+.footer_cta_video-background {
+	position: relative;
+	width: 100%;
+	height: 550px;
+}
+
+.footer_cta_video-background video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 550px;
+	object-fit: cover;
+}
+
+.footer_cta_gradient-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+.footer_cta_cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 90%;
+	height: 90%;
+}
+
+.footer_cta_video-background video {
+    /* Hide all types of video controls */
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.footer_cta_video-background video::-webkit-media-controls,
+.footer_cta_video-background video::-moz-media-controls,
+.footer_cta_video-background video::-ms-media-controls {
+    /* Hide the default controls on Chrome, Safari, Firefox, and Edge */
+    display: none !important;
+}
+
+/* Hide the video controls on Internet Explorer */
+.footer_cta_video-background video::-ms-media-controls-panel {
+    display: none !important;
+}
+
+.background_image_text_overlay.video {
+	position: relative;
+	width: 100%;
+	height: 750px;
+}
+
+.background_image_text_overlay {
+	position: relative;
+	width: 100%;
+}
+
+@media (max-width: 950px) {
+.background_image_text_overlay {
+	min-height: 550px;
+}	
+}
+
+.background_image_text_overlay video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+		height: 750px;
+
+}
+
+.background_image_text_overlay_gradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+.background_image_left_text {
+	flex-direction: column;
+	position: absolute;
+	max-width: 650px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+}
+
+@media (max-width: 950px) {
+	.background_image_left_text {
+		max-width: inherit;
+		width: 100%;
+		text-align: left;
+			align-items: flex-start;
+
+	}
+}
+
+.background_image_stats_wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	flex-wrap: wrap;
+}
+
+.background_image_stats_wrapper_item {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 48%;
+}
+
+@media (max-width: 950px) {
+	.background_image_stats_wrapper_item {
+		flex-basis: 100%;
+		padding-bottom: 20px;
+	}
+}

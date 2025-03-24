@@ -1,0 +1,144 @@
+
+.section_faq_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 80px;
+}
+
+.section_loop_faq {
+	flex-basis: 100%;
+}
+
+.accordion_faqs {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+
+@media (max-width: 950px) {
+	.accordion_faqs {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.accordion-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	padding-top: 0;
+	padding-bottom: 0;
+	transition: all 0.3s ease-out;
+
+}
+
+
+.accordion-title h4 {
+	transition: all 0.3s ease-out;
+}
+
+.accordion-title:hover h4 {
+	transition: all 0.3s ease-out;
+	color: #47CF63;
+}
+
+.accordion-content {
+	display: none;
+	padding-top: 30px;
+}
+
+
+.accordion-title i.far.fa-plus {
+	transition: transform 0.3s ease-out;
+}
+
+.accordion-title.active i.far.fa-plus {
+	transform: rotate(45deg);
+}
+
+
+.accordion-title i.far {
+	font-size: 21px;
+	color: #000!important;
+	transition: transform 0.3s ease-out;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	display: flex;
+}
+
+* {
+	/*outline: 1px solid #ddd;*/
+}
+
+.section_contact_wrapper {
+	height: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 950px) {
+	.section_contact_wrapper {
+		padding-top: 30px;
+	}
+}
+
+
+.section_contact_sidebar {
+	flex-basis: 30%;
+}
+
+@media (max-width: 950px) {
+	.section_contact_sidebar {
+		flex-basis: 100%;
+	}
+}
+
+.section_contact_main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-basis: 70%;
+}
+
+@media (max-width: 950px) {
+	.section_contact_main {
+		flex-basis: 100%;
+	}
+}
+
+
+ul.sidebar_socials {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+ul.sidebar_socials li{
+	display: flex;
+	margin: 0 15px 0 0;
+	display: block;
+	font-size: 25px;
+}
+
+
+ul.sidebar_socials li a i{
+	color: #151515;
+	transition: all 0.2s ease-in-out;
+
+}
+
+ul.sidebar_socials li a:hover i{
+	transition: all 0.2s ease-in-out;
+	color: #47CF63;
+}

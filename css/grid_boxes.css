@@ -1,0 +1,239 @@
+/* @override 
+	http://aquaria.local/wp-content/themes/aquaria/css/grid_boxes.css?*
+	https://aquaria.local/wp-content/themes/aquaria/css/grid_boxes.css?* */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	min-height: 715px
+}
+
+@media (max-width: 650px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+		grid-template-areas: left right;
+	}
+	}
+
+.left-column {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: 15px;
+	padding: 30px;
+	text-align: center;
+	z-index: 1;
+	min-height: 200px;
+}
+
+.right-column {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 15px
+}
+
+.top-image, 
+.bottom-image {
+	position: relative;
+	width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+
+.right-column-image {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	min-height: 250px
+}
+
+
+
+.right-column-video {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	min-height: 250px
+}
+
+.right-column-video video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 250px;
+	object-fit: cover;
+}
+
+
+
+
+
+.grid_item_text {
+	text-align: center;
+	width: 90%;
+	position: relative;
+	z-index: 2
+}
+
+.grid_item_text a{
+	text-decoration: underline;
+	font-family: 'klarheit_grotesk_semibold';
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+.grid_item_text a:hover{
+opacity: .5;
+}
+
+.grid_item_text.grid_item_text_left {
+	text-align: left;
+	width: 100%;
+	position: relative;
+	z-index: 2
+}
+
+.grid_item_text.grid_item_text_left img{
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1050px) {
+	.grid_item_text {
+		width: 90%
+	}
+}
+
+
+
+
+/*.left-column-1::before, 
+.left-column-2::before, 
+.right-column-1::before, 
+.right-column-2::before,
+.left-column::before, 
+.right-column-image::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	background: rgba(0,0,0,0.2)
+}*/
+
+
+.grid-container-four {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(2,1fr);
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+/*	min-height: 700px*/
+}
+
+@media (max-width: 950px) {
+	.grid-container-four {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4,1fr);
+		grid-template-areas: left-1 left-2 right-1 right-2;
+	/*	grid-column-gap: 5px;
+		grid-row-gap: 5px*/
+	}
+}
+
+.left-column-1_video,
+.left-column-1, 
+.left-column-2, 
+.right-column-1, 
+.right-column-2 {
+		display: flex;
+			overflow: auto;
+/*	align-items: center;*/
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: 15px;
+	padding: 65px 30px;
+	text-align: center;
+	z-index: 1;
+
+}
+
+.grid_box.bgcolor-gray-light h4,
+.grid_box.bgcolor-gray-light p {
+	color: #000;
+}
+
+.grid_box.bgcolor-black h3,
+.grid_box.bgcolor-black h4,
+.grid_box.bgcolor-black p {
+	color: #fff;
+}
+
+
+.left-column-1_video video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 250px;
+	right: 0;
+}
+
+@media (max-width: 650px) {
+.left-column-1_video video {
+	width: 110%;
+	left: -5%;
+}
+}
+
+
+
+.page-id-254 div.left-column.grid_box h4 {
+	max-width: 300px;
+}
+
+.page-id-254 div.right-column-image.grid_box h4 {
+	max-width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.page-id-254 .right-column-video.grid_box.grid_box h4 {
+	max-width: 370px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.page-id-23 .right-column div.right-column-image.grid_box:first-child h4{
+	margin-top: -35px;
+}
