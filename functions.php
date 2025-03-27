@@ -1,16 +1,23 @@
 <?php
 
+// Child Theme Version
+$ver = wp_get_theme()->get('Version');
+define( 'CHILD_THEME_VERSION', $ver);
 
 function my_theme_enqueue_styles() {
-	wp_enqueue_style( 'my-theme-style', get_stylesheet_uri(), array(), );
+
+    $verRnd = rand();
 	$lastmodtime= filemtime(get_template_directory_uri(). '/css/format.css');
-	wp_enqueue_style( 'format', get_template_directory_uri(). '/css/format.css',array(),$lastmodtime);
-	wp_enqueue_style( 'typestyles', get_template_directory_uri(). '/css/type-styles.css' );
-	wp_enqueue_style( 'grid_boxes', get_template_directory_uri(). '/css/grid_boxes.css' );
-	wp_enqueue_style( 'video-modal', get_template_directory_uri(). '/css/video-modal.css' );
-	wp_enqueue_style( 'video-bgs', get_template_directory_uri(). '/css/bg_videos.css' );
+
+    wp_enqueue_style( 'my-theme-style', get_stylesheet_uri(), array(),$verRnd);
+	wp_enqueue_style( 'format', get_template_directory_uri(). '/css/format.css',array(),$verRnd);
+	wp_enqueue_style( 'typestyles', get_template_directory_uri(). '/css/type-styles.css',array(),$verRnd);
+	wp_enqueue_style( 'grid_boxes', get_template_directory_uri(). '/css/grid_boxes.css',array(),$verRnd);
+	wp_enqueue_style( 'video-modal', get_template_directory_uri(). '/css/video-modal.css',array(),$verRnd);
+	wp_enqueue_style( 'video-bgs', get_template_directory_uri(). '/css/bg_videos.css',array(),$verRnd);
+
 	wp_enqueue_script('fontawesome-js', '//kit.fontawesome.com/9f6f90d785.js', array( 'jquery' ), '1.0', true ); 
-	wp_enqueue_style( 'gravity-forms', get_template_directory_uri(). '/css/gravity-forms.css' );
+	wp_enqueue_style( 'gravity-forms', get_template_directory_uri(). '/css/gravity-forms.css',array(),$verRnd);
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true);
 	wp_enqueue_script('lottie', '//cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js', array(), null, true);
 	wp_enqueue_script('lottie-player', '//unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js', array(), null, true);
@@ -21,7 +28,6 @@ function my_theme_enqueue_styles() {
 	wp_enqueue_script( 'gsap-settings', get_stylesheet_directory_uri() . '/js/gsap-options.js', array('gsap', 'ScrollTrigger'), '1.0', true );
 	wp_enqueue_script('carousel-script',get_template_directory_uri() . '/js/crausel.js',array('jquery'),null,true);
 }
-
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 
