@@ -324,6 +324,8 @@ header.site-header.banner-displayed {
 body.logged-in.admin-bar header.site-header {
 	/*background: red;*/
 	top: 32px;
+	padding-left: 72px;
+	padding-right: 72px;
 }
 
 header.site-header.header_black_bg {
@@ -2827,13 +2829,17 @@ ul.has_icon li img {
 
 .section_hero_wrapper_inner {
 	display: flex;
-	padding: 60px 2%;
+	padding: 60px 2% 60px 2%;
 	flex-wrap: wrap;
+}
+
+.section_hero_wrapper_inner.no-margin {
+	padding: 0px 2% 0px 0px !important;
 }
 
 @media (max-width: 950px) {
 	.section_hero_wrapper_inner {
-		padding: 40px 5% 20px;
+		padding: 0px 5% 20px;
 	}
 }
 
@@ -2848,6 +2854,11 @@ ul.has_icon li img {
 
 .section_hero_wrapper_inner_right {
 	flex-basis: 55%;
+}
+
+.section_hero_wrapper_inner_right > picture img, .section_hero_wrapper_inner_right picture > img{
+	border-radius: 32px;
+	overflow: hidden;
 }
 
 @media (max-width: 950px) {
