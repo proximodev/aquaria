@@ -20,7 +20,7 @@ a.nodecoration {
 
 .full.bgcolor-black.white .block_item_text  p a {
 	color: #fff;
-		font-family: 'klarheit_grotesk_semibold';
+	font-family: 'Lay Grotesk', sans-serif;
 	font-weight: 600;
 	font-style: normal;
 	text-decoration: underline;
@@ -39,10 +39,18 @@ h4,
 h5, 
 h6, 
 p {
-			font-family: 'klarheit_grotesk_regular', sans-serif;
+	font-family: 'Lay Grotesk', sans-serif;
 	margin-top: 0;
+	font-weight: normal;
 	margin-bottom: 30px;
 	color: #000;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span {
+	font-family: 'P22 Mackinac', serif;
 }
 
 h1 a, 
@@ -107,9 +115,7 @@ color: #45CC61!important;
 
 }
 
-
-
-a.gray, 
+a.gray,
 h1.gray, 
 h2.gray, 
 h3.gray, 
@@ -172,52 +178,44 @@ p.centertext {
 }
 
 h1 {
-	font-family: 'klarheit_grotesk_semibold';
-	font-weight: 500;
 	font-style: normal;
-	font-size: 70px;
-	line-height: 1.03em;
+	font-size: 88px;
+	line-height: 1em;
 }
 
 @media (max-width: 950px) {
 	h1 {
-		font-size: 50px;
+		font-size: 52px;
 	}
 }
 
-	@media (max-width: 650px) {
+@media (max-width: 650px) {
 	h1 {
-		font-size: 35px;
+		font-size: 40px;
 	}
 }
 
-
-h1.smallh1,
-h2 {
-	font-weight: 500;
+h1.smallh1, h2 {
 	font-style: normal;
-	font-size: 50px;
-	font-weight: normal;
+	font-size: 72px;
 	line-height: 1.1em;
 }
 
 @media (max-width: 950px) {
 	h1.smallh1,
 	h2 {
-		font-size: 40px;
+		font-size: 44px;
 	}
 }
 
-	@media (max-width: 650px) {
+@media (max-width: 650px) {
 	h1.smallh1,
 	h2 {
-		font-size: 27px;
+		font-size: 36px;
 	}
 }
 
-	h3 {
-	font-family: 'klarheit_grotesk_regular';
-	font-weight: 500;
+h3 {
 	font-style: normal;
 	font-size: 40px;
 	line-height: 1.2em;
@@ -226,21 +224,20 @@ h2 {
 
 @media (max-width: 950px) {
 	h3 {
-		font-size: 30px;
+		font-size: 36px;
 	}
 }
 
-	@media (max-width: 650px) {
+@media (max-width: 650px) {
 	h3 {
-		font-size: 25px;
+		font-size: 32px;
 	}
 }
 
 
 h4 {
 
-	font-family: 'klarheit_grotesk_semibold';
-	font-weight: 500;
+	font-family: 'Lay Grotesk', sans-serif;
 	font-style: normal;
 	font-size: 28px;
 	line-height: 1.4em;
@@ -259,7 +256,7 @@ h4 {
 }
 
 	h5 {
-	font-family: 'klarheit_grotesk_regular';
+	font-family: 'Lay Grotesk', sans-serif;
 	font-weight: 300;
 	font-style: normal;
 	font-size: 24px;
@@ -273,7 +270,7 @@ h4 {
 }
 
 h6 {
-	font-family: 'klarheit_grotesk_semibold';
+	font-family: 'Lay Grotesk', sans-serif;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 22px;
@@ -287,19 +284,14 @@ h6 {
 	}
 }
 
-h6.bold {
-}
-
 h6.uppercase {
 	font-size: 12px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-
-
 ul {
-	font-family: 'klarheit_grotesk_regular';
+	font-family: 'Lay Grotesk', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 19px;
@@ -321,7 +313,7 @@ ul > ul li {
 }
 
 ul li {
-		font-family: 'klarheit_grotesk_regular', sans-serif;
+		font-family: 'Lay Grotesk', sans-serif;
 	font-style: normal;
 	font-size: 19px;
 	line-height: 1.6em;
@@ -349,7 +341,7 @@ border-radius: 50%;
 }
 
 ol {
-		font-family: 'klarheit_grotesk_regular', sans-serif;
+		font-family: 'Lay Grotesk', sans-serif;
 	font-style: normal;
 	font-size: 19px;
 	line-height: 1.6em;
@@ -362,7 +354,7 @@ ol {
 }
 
 ol li {
-		font-family: 'klarheit_grotesk_regular', sans-serif;
+		font-family: 'Lay Grotesk', sans-serif;
 	font-style: normal;
 	font-size: 19px;
 	line-height: 1.6em;
@@ -379,7 +371,7 @@ p.hafllineheight {
 
 p, 
 p.m {
-		font-family: 'klarheit_grotesk_regular', sans-serif;
+		font-family: 'Lay Grotesk', sans-serif;
 	font-style: normal;
 	font-size: 19px;
 	line-height: 1.6em;
@@ -395,28 +387,28 @@ p.m {
 }
 
 p strong {
-	font-family: 'klarheit_grotesk_bold';
-
+	font-family: 'Lay Grotesk', sans-serif;
+	font-weight: bold;
 }
 
 p.b {
-	font-family: 'klarheit_grotesk_semibold';
-	font-weight: 600;
+	font-family: 'Lay Grotesk', sans-serif;
+	font-weight: bold;
 	font-style: normal;
 }
 
 p.s {
-		font-family: 'klarheit_grotesk_regular', sans-serif;
+	font-family: 'Lay Grotesk', sans-serif;
 	font-size: 16px;
 }
 
 p.xs {
-		font-family: 'klarheit_grotesk_regular', sans-serif;
+	font-family: 'Lay Grotesk', sans-serif;
 	font-size: 12px;
 }
 
 .rte p a {
-  font-family: 'klarheit_grotesk_semibold';
+  font-family: 'Lay Grotesk', sans-serif;
   font-weight: 600;
   font-style: normal;
   color: #46CF63;
@@ -447,21 +439,21 @@ p.uppercase {
 	text-transform: uppercase;
 }
 
-
 .btn {
-			font-family: 'klarheit_grotesk_semibold', sans-serif;
+	font-family: 'klarheit_grotesk_semibold', sans-serif;
 	display: flex;
+	font-weight: 500;
 	font-size: 16px;
 	min-width: 100px;
 	max-height: 45px;
-		min-height: 45px;
+	min-height: 45px;
 	padding-right: 20px;
 	padding-left: 20px;
 	transition: all .40s ease-in-out;
-	color: #fff;
-	border: 1px solid #47CF63;
+	color: #28282D;
+	border: 1px solid #F0F0DC;
 	border-radius: 30px;
-	background-color: #47CF63;
+	background-color: #F0F0DC;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -479,7 +471,7 @@ a.btn.nounderline i {
 }
 
 .big_btn {
-font: 19px/1.5em 'klarheit_grotesk_regular', sans-serif;
+font: 19px/1.5em 'Lay Grotesk', sans-serif;
 display: flex;
 	transition: all .40s ease-in-out;
 	color: #000000;
