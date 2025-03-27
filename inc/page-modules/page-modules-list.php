@@ -2,7 +2,7 @@
 	<?php while ( have_rows( 'page_modules' ) ) : the_row(); ?>
 	    <?php if ( get_row_layout() == 'feature_tiles' ) : ?>
 	        <?php get_template_part( 'inc/page-modules/feature-tiles'); ?>
-		<?php if ( get_row_layout() == 'home_three_column_product_block' ) : ?>
+		<?php elseif ( get_row_layout() == 'home_three_column_product_block' ) : ?>
 			<?php get_template_part( 'inc/page-modules/home_three_column_product_block'); ?>
 		<?php elseif ( get_row_layout() == 'grid_blocks_3' ) : ?>
 			<?php get_template_part( 'inc/page-modules/grid_blocks_3'); ?>

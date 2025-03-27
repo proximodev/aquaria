@@ -1,6 +1,10 @@
-<?php $featured_posts = get_sub_field( 'products' ); ?>
-<?php if ( $featured_posts ) : ?>
-<section class="our-products">
+<?php
+    $backgroundColor = get_sub_field( 'background_color' );
+    if (!$backgroundColor) {
+        $backgroundColor = "default";
+    }
+?>
+<section class="our-products <?= $backgroundColor; ?>">
     <div class="content">
         <div class="our-products-title">
             <h3>
@@ -61,4 +65,3 @@
     </div>
     <!-- /.content -->
 </section>
-<?php endif; ?>
