@@ -1,8 +1,4 @@
-/* @override 
-	http://aquaria.local/wp-content/themes/aquaria/style.css?*
-	https://aquaria.local/wp-content/themes/aquaria/style.css?* */
-
-/*!
+/* 
 Theme Name: aquaria
 Theme URI: http://underscores.me/
 Author: Underscores.me
@@ -32,49 +28,50 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 @font-face {
-	font-family: 'klarheit_grotesk_regular';
-	font-weight: 400;
+	font-family: 'Lay Grotesk';
+	src: url('/wp-content/themes/aquaria/fonts/LayGrotesk-Regular.woff2') format('woff2'),
+	url('/wp-content/themes/aquaria/fonts/LayGrotesk-Regular.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
-	src: url('/wp-content/themes/aquaria/fonts/klarheitgrotesk-regular.woff2') format('woff2'),
-	url('/wp-content/themes/aquaria/fonts/klarheitgrotesk-regular.woff') format('woff');
-
+	font-display: swap;
 }
 
 @font-face {
-	font-family: 'klarheit_grotesk_semibold';
+	font-family: 'Lay Grotesk';
+	src: url('/wp-content/themes/aquaria/fonts/LayGrotesk-Medium.woff2') format('woff2'),
+	url('/wp-content/themes/aquaria/fonts/LayGrotesk-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lay Grotesk';
+	src: url('/wp-content/themes/aquaria/fonts/LayGrotesk-Semibold.woff2') format('woff2'),
+	url('/wp-content/themes/aquaria/fonts/LayGrotesk-Semibold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
-	src: url('/wp-content/themes/aquaria/fonts/klarheitgrotesk-semibold.woff2') format('woff2'),
-	url('/wp-content/themes/aquaria/fonts/klarheitgrotesk-semibold.woff') format('woff');
-
+	font-display: swap;
 }
-
 
 @font-face {
-	font-family: 'klarheit_grotesk_bold';
-	font-weight: 700;
+	font-family: 'Lay Grotesk';
+	src: url('/wp-content/themes/aquaria/fonts/LayGrotesk-Bold.woff2') format('woff2'),
+	url('/wp-content/themes/aquaria/fonts/LayGrotesk-Bold.woff') format('woff');
+	font-weight: bold;
 	font-style: normal;
-	src: url('/wp-content/themes/aquaria/fonts/klarheitgrotesk-bold.woff2') format('woff2'),
-	url('/wp-content/themes/aquaria/fonts/klarheitgrotesk-bold.woff') format('woff');
+	font-display: swap;
 }
 
-
-
-
-
- h1 {
-	font-family: 'klarheit_grotesk_regular', sans-serif;
+@font-face {
+	font-family: 'P22 Mackinac';
+	src: url('/wp-content/themes/aquaria/fonts/P22MackinacProBook.woff2') format('woff2'),
+	url('/wp-content/themes/aquaria/fonts/P22MackinacProBook.woff') format('woff');
 	font-weight: normal;
-	font-size: 70px;
-	font-weight: 500;
-	line-height: 112.5%;
-	letter-spacing: 0px;
-	color: #000;
-/*	background: red;*/
+	font-style: normal;
+	font-display: swap;
 }
-
 
 html , body {
 	-webkit-text-size-adjust: 100%;

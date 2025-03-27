@@ -31,11 +31,7 @@
 
 	<?php if (is_front_page()) { // only load on front-pate ?><?php } // (is_front_page ?>
 
-
-
-
-
-		<?php
+    <?php
 	// Retrieve the ACF variable if set on the page 
 		$header_style = ''; 
 		if ( have_rows( 'header' ) ) :
@@ -53,7 +49,7 @@
 		global $variable; ?>
 		<header id="masthead" class="site-header <?php echo $header_style; ?> <?php echo $variable; ?>">
 			<div class="logo_wrapper <?php echo $header_style; ?> <?php echo $variable; ?>">
-				<a href="/"> <?php get_template_part('imgs/aquaria_logo.svg');?></a>
+				<a href="/"><img src="<?= get_template_directory_uri(); ?>/imgs/aquaria-logo.svg" alt="Aquaria"></a>
 			</div>
 			<div class="site-header-push"></div>
 			<div class="navigation">
