@@ -48,8 +48,15 @@
 	// If so echo it below in the header and logo wrapper
 		global $variable; ?>
 		<header id="masthead" class="site-header <?php echo $header_style; ?> <?php echo $variable; ?>">
+            <?php
+            if ($header_style == "header_black_bg") {
+                $logoClass = " logo-white";
+            } else {
+                $logoClass = " logo-default";
+            }
+            ?>
 			<div class="logo_wrapper <?php echo $header_style; ?> <?php echo $variable; ?>">
-				<a href="/"><img src="<?= get_template_directory_uri(); ?>/imgs/aquaria-logo.svg" alt="Aquaria"></a>
+				<a href="/"><img class="logo<?= $logoClass; ?>" src="<?= get_template_directory_uri(); ?>/imgs/aquaria-logo.svg" alt="Aquaria"></a>
 			</div>
 			<div class="site-header-push"></div>
 			<div class="navigation">
