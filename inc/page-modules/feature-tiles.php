@@ -8,9 +8,9 @@
         <section class="feature-tiles">
           <div class="container">
             <div class="heading-text">
-              <h1 class="title">
+              <h2 class="title">
                 <?= $title; ?>
-              </h1>
+              </h2>
             </div>
 
             <div class="graphic-and-description">
@@ -37,7 +37,7 @@
                   <div class="feature-box">
                     <div class="icon">
                       <?php if( $icon_url ): ?>
-                        <img src="<?php echo $icon_url; ?>" alt="<?php echo $icon_alt; ?>" />
+                        <img class="icon" src="<?php echo $icon_url; ?>" alt="<?php echo $icon_alt; ?>" />
                       <?php endif; ?>
                     </div>
                     <div class="feature-text">
