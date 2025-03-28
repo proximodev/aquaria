@@ -2,7 +2,7 @@
 	<div class="content">
 		<div class="section_footer_inner">
 			<div class="section_footer_column_one">
-				<?php get_template_part('imgs/aquaria_logo-white.svg');?>
+				<a href="/"><img class="logo" src="<?= get_template_directory_uri(); ?>/imgs/aquaria-logo.svg" alt="Aquaria"></a>
 				<?php
 					the_field('footer_text', 'option');
 				?>
