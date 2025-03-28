@@ -2740,7 +2740,8 @@ order: 2;
 }
 
 .section_2_column_block_item.block_item_img {
-	
+	border-radius: 32px;
+	overflow: hidden;
 }
 
 .section_2_column_block_item.block_item_video {
