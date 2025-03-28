@@ -107,6 +107,27 @@ a.white {
 	color: #fff!important;
 }
 
+.ice-green h1,
+.ice-green h2,
+.ice-green h3,
+.ice-green p,
+.ice-green ul,
+.ice-green ul li,
+ul.ice-green li,
+ol.ice-green,
+li.ice-green,
+h1.ice-green,
+h2.ice-green,
+h3.ice-green,
+h4.ice-green,
+h5.ice-green,
+h6.ice-green,
+p.ice-green,
+p.ice-green a,
+a.ice-green {
+	color: #fff!important;
+}
+
 p.white a:hover, 
 a.white:hover {
 	transition: all 0.2s ease-out;
