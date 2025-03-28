@@ -95,6 +95,10 @@ main#primary.site-main.header_transparent_bg, main#primary.site-main.header_grad
 	background-color: #fff;
 }
 
+.bgcolor-ocean-turquoise {
+	background-color: ##1E4B5A!important;
+}
+
 .bgcolor-light-gray {
 	/* Light Gray */
 	background-color: #EDEFF3;
