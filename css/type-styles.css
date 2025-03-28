@@ -1,9 +1,9 @@
 /* @override 
-	http://km-associates.local/wp-content/themes/km_associates/css/type-styles.css?*
-	http://aquaria.local/wp-content/themes/aquaria/css/type-styles.css?ver=6.2
-	https://aquaria.local/wp-content/themes/aquaria/css/type-styles.css?*
-	http://aquaria.local/wp-content/themes/aquaria/css/type-styles.css?*
-	https://aquariawp-engine.local/wp-content/themes/aquaria/css/type-styles.css?* */
+http://km-associates.local/wp-content/themes/km_associates/css/type-styles.css?*
+http://aquaria.local/wp-content/themes/aquaria/css/type-styles.css?ver=6.2
+https://aquaria.local/wp-content/themes/aquaria/css/type-styles.css?*
+http://aquaria.local/wp-content/themes/aquaria/css/type-styles.css?*
+https://aquariawp-engine.local/wp-content/themes/aquaria/css/type-styles.css?* */
 
 
 
@@ -441,14 +441,14 @@ p.uppercase {
 
 .btn {
 	font-family: 'klarheit_grotesk_semibold', sans-serif;
-	display: flex;
+	display: inline-flex;
 	font-weight: 500;
 	font-size: 16px;
 	min-width: 100px;
-	max-height: 45px;
-	min-height: 45px;
-	padding-right: 20px;
-	padding-left: 20px;
+	max-height: 46px;
+	min-height: 46px;
+	padding-right: 25px;
+	padding-left: 25px;
 	transition: all .40s ease-in-out;
 	color: #28282D;
 	border: 1px solid #F0F0DC;
@@ -460,6 +460,15 @@ p.uppercase {
 	white-space: nowrap;
 	margin-bottom: 0;
 	text-decoration: none;
+	&.light-blue {
+		color: #1E4B5A;
+		background-color: #D7E6EB;
+		&:hover {
+			color: #D7E6EB;
+			border-color: #D7E6EB;
+			background-color: #fff;
+		}
+	}
 }
 
 a.btn.nounderline {
@@ -471,27 +480,27 @@ a.btn.nounderline i {
 }
 
 .big_btn {
-font: 19px/1.5em 'Lay Grotesk', sans-serif;
-display: flex;
+	font: 19px/1.5em 'Lay Grotesk', sans-serif;
+	display: flex;
 	transition: all .40s ease-in-out;
 	color: #000000;
 	border: 1px solid #C6C6C6;
-border-radius: 15px;
+	border-radius: 15px;
 	background-color: #fff;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
 	margin-bottom: 0;
 	text-decoration: none;
-padding: 20px 50px 20px 40px;
-max-width: 410px;
-position: relative;
+	padding: 20px 50px 20px 40px;
+	max-width: 410px;
+	position: relative;
 }
 
 .big_btn:hover {
-background: #000000;
-border: 1px solid #000000;
-color: #fff;
+	background: #000000;
+	border: 1px solid #000000;
+	color: #fff;
 }
 
 .big_btn::after {
