@@ -1,5 +1,9 @@
 <?php
+$backgroundColor = "";
+$variable = '';
+
 $title = get_sub_field('title');
+$kicker = get_sub_field('kicker');
 $generalText = get_sub_field('general_text');
 $icon = get_sub_field('icon');
 $buttonLink = get_sub_field('button_link');
@@ -7,7 +11,6 @@ $backgroundColor = get_sub_field('background_color');
 $customClass = get_sub_field('custom_class');
 $layout = get_sub_field('layout');
 
-$variable = '';
 if ($backgroundColor === 'bgcolor-black') {
     $variable = 'white';
 }
@@ -56,6 +59,10 @@ if ($backgroundColor === 'bgcolor-ocean-turquoise') {
                     <div class="icon-wrapper">
                         <img class="icon" src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" />
                     </div>
+                <?php endif; ?>
+
+                <?php if ($kicker): ?>
+                    <p class="kicker"><?php echo esc_html($kicker); ?></p>
                 <?php endif; ?>
 
                 <?php if ($title): ?>
