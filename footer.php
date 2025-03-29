@@ -46,7 +46,7 @@
 							<a href="<?php echo esc_url( $link['url'] ); ?>" target="<?php echo esc_attr( $link['target'] ); ?>"><?php echo esc_html( $link['title'] ); ?></a>
 						<?php endif; ?>
 					<?php endwhile; ?>
-					&copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?>. All rights reserved.
+					<span>&copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?>. All rights reserved.</span>
 				</p>
 			<?php endif; ?>
 		</div> <!-- section_footer_credits_links -->
